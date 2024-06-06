@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Responsive Personal Portfolio Website Design| Mahima</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5dc4d79db1.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -15,7 +16,7 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Skills</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
@@ -75,20 +76,92 @@
             </div>
 
         </div>
-        <script>
-              var tablinks=document.getElementsByClassName("tab-links");
-              var tabcontents=document.getElementsByClassName("tab-contents");
+        <!--------------skills------->
+        <div id="skills">
+            <div class="contaner">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <h2>Front-End Skills</h2>
+                        <p>Proficient in HTML for creating structured web pages, CSS for responsive and visually appealing designs,JavaScript for adding interactivity, and React.js for building dynamic single-page applications.</p>
+                        
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-react"></i>
+                        
+                    </div>
+                    <div>
+                        <h2>Back-End Skills</h2>
+                        <p>Experienced in Python for backend development with frameworks Node.js for scalable server-side applications using Express, and SQL for database management and data manipulation with  MySQL.</p>
+                        
+                            <i class="fa-brands fa-python"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-solid fa-database"></i>
+                        
+                    </div>
+                    <div>
+                        <h2>Tools and Technologies</h2>
+                        <p>Familiar with integrating OpenAI's GPT models and utilizing ChatGPT for building conversational AI applications.</p>
+                        
+                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-comments"></i>
+                            <i class="fab fa-git-alt"></i>
+                        
+                    </div>
 
-              function opentab(tabname){
-                for (tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab")
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
-              }
+                </div>
+                
+
+            </div>
+
+        </div>
+        <!--------------Contact-------->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                            </div>
+                            <a href=" "  download class="btn btn2">Download CV</a>
+                    </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message" row="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn3">Submit</button>
+                            </form>
+
+                        </div>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+          for (tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab")
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+        }
         </script>
     </body>
 </html>
