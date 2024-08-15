@@ -29,7 +29,7 @@ function openmenu(){
 function closemenu(){
     sidemeu.style.right="-200px";
 }
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxouprY_lWsT7E7_5J8iDuRw_qY5BofuhS0ZjlU5Md5ygueWDijijSc_MlNe0cdzj3ZWg/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyTxEw57TUs4uGt0q3dShiZnjOxjH26FhWZ3SqclKhI-iSxZvoVyso-XQEJ-MtnLe6w/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
